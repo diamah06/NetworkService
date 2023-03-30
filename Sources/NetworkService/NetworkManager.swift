@@ -9,10 +9,11 @@ import Foundation
 
 @available(macOS 12.0, *)
 @available(iOS 15.0, *)
+
 struct NetworkManager {
     
    
-    func fetch<Anything: Codable>(from urlString: String) async throws -> Anything {
+    public func fetch<Anything: Codable>(from urlString: String) async throws -> Anything {
         
 // construire l'URL à partir de la chaîne d'URL passée à l'aide d'une instruction de gard.
         guard let url = URL(string: urlString) else  {
