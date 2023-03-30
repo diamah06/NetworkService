@@ -11,7 +11,8 @@ import Foundation
 @available(iOS 15.0, *)
 
 public class NetworkManager {
-    
+  
+    public init() {}
    
     public func fetch<Anything: Codable>(from urlString: String) async throws -> Anything {
         
