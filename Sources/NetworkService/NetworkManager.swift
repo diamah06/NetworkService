@@ -10,7 +10,7 @@ import Foundation
 @available(macOS 12.0, *)
 @available(iOS 15.0, *)
 
-struct NetworkManager {
+public class NetworkManager {
     
    
     public func fetch<Anything: Codable>(from urlString: String) async throws -> Anything {
